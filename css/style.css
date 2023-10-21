@@ -6,6 +6,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#grid-container{
+    display: grid;
+    grid-template-areas: "header" "main" "footer"
+}
+
 #logo{
     text-align: center;
     text-decoration: none;
@@ -54,5 +59,4 @@ body header nav ul li{
 }
 
 #nyheter-img{
-    display: grid;
 }

@@ -16,20 +16,21 @@ body{
     text-decoration: none;
 }
 
+#nav-ikoner li{
+
+}
+
 header{
     text-align: center;
     background-size: cover;
     padding-bottom: 20px;
 }
 
-header nav{
+body header nav{
+    display:flex;
     background-color: rgb(184, 184, 184);
 }
 
-#kategorier li{
-    display: inline-block;
-    padding: 0.5rem
-}
 
 body header nav ul{
     text-decoration: none;
@@ -42,6 +43,13 @@ body header nav ul li{
     list-style: none;
     display: inline-block;
 }
+
+
+#kategorier li{
+    display: inline-block;
+    justify-items: baseline;
+}
+
 
 #broedsmuler{
     font-size: small;
@@ -59,4 +67,12 @@ body header nav ul li{
 }
 
 #nyheter-img{
+}
+
+.produktbilde{
+    border-radius: 10%;
+}
+
+body footer{
+    grid-area: footer;
 }

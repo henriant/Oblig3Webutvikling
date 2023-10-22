@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Oblig 3 Henrik Antonsen</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fontawesome/css/brands.css" rel="stylesheet">
+        <link href="css/fontawesome/css/solid.css" rel="stylesheet">
     </head>
 
 
@@ -14,17 +17,15 @@
             <header>
                 <nav>
                     <a id="logo" href="index.html">Choose</a>
-                    <div>
+                    <div id="nav-ikoner-1">
                         <i class="fa-solid fa-user"></i>
-                        <i class="fa-regular fa-bars"></i>
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <i class="fa-regular fa-magnifying-glass"></i>
                     </div>
-                    <ul>
-                        <li><a id="logg-inn">Logg inn</a></li>
-                        <li><a id="hamburgermeny">#</a></li>
-                        <li><a id="handlevogn">Handlevogn</a></li>
-                    </ul>
+                    <div id="nav-ikoner-2">
+                        <i id="hamburgermeny" class="fa-regular fa-bars"></i>
+                        <input id="sokefelt" type="text" placeholder="Søk blant 1000 sko...">
+                        <i id="sok" class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                     <ul class="broedsmuler">
                         <li><a href="index.html">Hjem</a></li>
                         <li><a href="produkt.html">Produkt</a></li>
@@ -50,18 +51,17 @@
                     <a id="se-alle-omtaler-btn">Se alle</a>
                 </section>
             </main>
-            <section id="email-reg">
-                <h3>Bli medlem hos Choose!</h3>
-                <p>Lorem ipsum lorem ipsum lorem ipsum.</p>
-                <form>
-                    <label for="email-reg">E-post:</label>
-                    <input type="text" id="email-reg">
-                    <input type="submit" value="Abonner">
-                </form>
-        
-            </section>
-
             <footer>
+                <section id="email-reg">
+                    <h3>Bli medlem hos Choose!</h3>
+                    <p>Lorem ipsum lorem ipsum lorem ipsum.</p>
+                    <form>
+                        <label for="email-reg">E-post:</label>
+                        <input type="text" id="email-reg">
+                        <input type="submit" value="Abonner">
+                    </form>
+            
+                </section>
                 <nav>
                     <section id="snarveier">
                         <h3>Snarveier</h3>

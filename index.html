@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Choose.no hjemmeside</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href="css/font/css/fontawesome.css" rel="stylesheet">
-        <link href="css/font/css/brands.css" rel="stylesheet">
-        <link href="css/font/css/solid.css" rel="stylesheet"
+        <link href="css/fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fontawesome/css/brands.css" rel="stylesheet">
+        <link href="css/fontawesome/css/solid.css" rel="stylesheet">
     </head>
 
 
@@ -17,11 +17,14 @@
             <header>
                 <nav>
                     <a id="logo" href="index.html">Choose</a>
-                    <div id="nav-ikoner">
-                        <i href="#" class="fa-solid fa-user"></i>
-                        <i class="fa-regular fa-bars"></i>
+                    <div id="nav-ikoner-1">
+                        <i class="fa-solid fa-user"></i>
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <i class="fa-regular fa-magnifying-glass"></i>
+                    </div>
+                    <div id="nav-ikoner-2">
+                        <i id="hamburgermeny" class="fa-regular fa-bars"></i>
+                        <input id="sokefelt" type="text" placeholder="Søk blant 1000 sko...">
+                        <i id="sok" class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <section id="kategorier">
                         <li><a>Kategori</a></li>
@@ -51,14 +54,14 @@
                         <img class="produktbilde" src="https://placehold.co/100x100">
                     </article>
 
-                    <article>
+                    <article class="produktbilde-horisontal">
                         <h3 class="underoverskrift">Kategori</h3>
                         <a href="#" class="les-mer-knapp">Se alle -></a>
                         <img class="produktbilde" src="https://placehold.co/100x100">
                         <img class="produktbilde" src="https://placehold.co/100x100">
                     </article>
 
-                    <article>
+                    <article class="produktbilde-horisontal">
                         <h3 class="underoverskrift">Kategori</h3>
                         <a href="#" class="les-mer-knapp">Se alle -></a>
                         <img class="produktbilde" src="https://placehold.co/100x100">
@@ -66,19 +69,19 @@
                     </article>
 
                 </section>
+                <section id="email-reg">
+                    <h3>Bli medlem hos Choose!</h3>
+                    <p>Lorem ipsum lorem ipsum lorem ipsum.</p>
+                    <form>
+                        <label for="email-reg">E-post:</label>
+                        <input type="text" id="email-reg">
+                        <input type="submit" value="Abonner">
+                    </form>
+                
+                </section>
             </main>
-            <section id="email-reg">
-                <h3>Bli medlem hos Choose!</h3>
-                <p>Lorem ipsum lorem ipsum lorem ipsum.</p>
-                <form>
-                    <label for="email-reg">E-post:</label>
-                    <input type="text" id="email-reg">
-                    <input type="submit" value="Abonner">
-                </form>
-            
-            </section>
-
             <footer>
+                
                 <nav>
                     <section id="snarveier">
                         <h3>Snarveier</h3>
@@ -98,12 +101,15 @@
                         <li><a>Garanti</a></li>
                         <li><a>Retur</a></li>
                     </section>
+
                 </nav>
-                <ul id="sosiale-medier">
-                    <li>f</li>
-                    <li>i</li>
-                    <li>y</li>
-                </ul>
+                <section id="sosiale-medier">
+                    <ul>
+                        <li>f</li>
+                        <li>i</li>
+                        <li>y</li>
+                    </ul>
+                </section>
             </footer>
         </div>
     </body>

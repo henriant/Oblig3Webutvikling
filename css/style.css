@@ -11,68 +11,106 @@ body{
     grid-template-areas: "header" "main" "footer"
 }
 
-#logo{
-    text-align: center;
-    text-decoration: none;
-}
-
-#nav-ikoner li{
-
-}
-
-header{
-    text-align: center;
-    background-size: cover;
-    padding-bottom: 20px;
-}
+                                                                                  /* HEADER */
+                                                           /* NAV */
 
 body header nav{
-    display:flex;
-    background-color: rgb(184, 184, 184);
+    display: grid;
+    background-color: rgb(196, 194, 194);
 }
 
-
-body header nav ul{
+#logo{
+    justify-self: center;
+    font-size: xx-large;
     text-decoration: none;
-    list-style: none;
-    display: inline-block;
 }
 
-body header nav ul li{
-    text-decoration: none;
+#kategorier{
     list-style: none;
-    display: inline-block;
-}
+    display: inline-flex;
 
+}
 
 #kategorier li{
-    display: inline-block;
-    justify-items: baseline;
+    padding: 0.3rem;
+    margin: 0.3rem;
 }
 
+#nav-ikoner-1, #nav-ikoner-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: x-large;
+}
 
-#broedsmuler{
-    font-size: small;
+#sokefelt {
+    width: 15rem;
+}
+
+.broedsmuler li{
+    float: left;
     list-style: none;
-    text-align: left;
+    font-size: medium;
+    padding: 10px;
 }
 
-#broedsmuler li{
-    display: inline-block;
+                                          /*  /NAV    */
+
+body header h1, body header p{
+    display: flex;
+    justify-content: center;
 }
 
+                                           /* MAIN */
 .underoverskrift{
-    text-align: center;
-    background-color:rgb(184, 184, 184);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(196, 194, 194);
 }
 
-#nyheter-img{
+main section article{
+    display: grid;
+}
+main section article img{
+    justify-items: left;
+
 }
 
-.produktbilde{
-    border-radius: 10%;
+
+
+.produktbilde-horisontal{}
+
+.les-mer-knapp{
+    display: flex;
+    justify-content: right;
 }
 
-body footer{
-    grid-area: footer;
+
+
+
+                                    /* FOOTER */
+footer nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #000;
+}
+
+footer nav li{
+    text-decoration: none;
+    list-style: none;
+    font-size: medium;
+    padding: 0.2rem;
+    color: #ffff;
+}
+
+#snarveier h3, #informasjon h3, #support h3{
+    text-decoration: underline;
+    color: #ffff;
+}
+
+#sosiale-medier{
+    display: inline-flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #000;
 }

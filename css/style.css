@@ -4,6 +4,7 @@ html{
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 #grid-container{
@@ -25,13 +26,16 @@ body header nav{
     text-decoration: none;
 }
 
-#kategorier{
-    list-style: none;
+#kategorier ul{
     display: inline-flex;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    list-style: none;
 
 }
 
-#kategorier li{
+#kategorier ul li{
     padding: 0.3rem;
     margin: 0.3rem;
 }
@@ -48,11 +52,14 @@ body header nav{
 }
 
 .broedsmuler li{
+    width: 100%;
     float: left;
     list-style: none;
     font-size: medium;
     padding: 10px;
 }
+
+
 
                                           /*  /NAV    */
 
@@ -68,24 +75,39 @@ body header h1, body header p{
     background-color: rgb(196, 194, 194);
 }
 
-main section article{
-    display: grid;
-}
-main section article img{
-    justify-items: left;
+body main section article{
+    display: flex;
 
 }
 
+body main section article img{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+#nyheter-img{
+   display: inline-block;
+   margin: 0 auto;
+}
 
 
-.produktbilde-horisontal{}
+
+.produktbilde{
+    display: inline-block;
+    margin: 0 auto;
+}
 
 .les-mer-knapp{
     display: flex;
     justify-content: right;
 }
 
-
+#email-reg, #email-reg-box{
+    margin: 1rem;
+}
+#email-reg form{
+    margin: auto 0;
+}
 
 
                                     /* FOOTER */
@@ -103,14 +125,29 @@ footer nav li{
     color: #ffff;
 }
 
+footer nav section ul{
+    padding: 0;
+}
+
 #snarveier h3, #informasjon h3, #support h3{
     text-decoration: underline;
     color: #ffff;
 }
 
 #sosiale-medier{
-    display: inline-flex;
-    justify-content: space-between;
+    width: 100%;
+    display: inline-block;
     color: #fff;
     background-color: #000;
+}
+
+#sosiale-medier ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    font-size: xx-large;
+}
+#sosiale-medier ul li{
+    display: flex;
 }

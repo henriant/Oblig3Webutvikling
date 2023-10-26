@@ -9,7 +9,8 @@ body{
 
 #grid-container{
     display: grid;
-    grid-template-areas: "header" "main" "footer"
+    grid-template-areas: "header" "main" "footer";
+    justify-content: center;
 }
 
                                                                                   /* HEADER */
@@ -73,28 +74,36 @@ body header h1, body header p{
     display: flex;
     justify-content: center;
     background-color: rgb(196, 194, 194);
+    width: 100%;
 }
 
 body main section article{
     display: flex;
+    justify-content: space-evenly;
+    max-width: 60%;
 
 }
 
-body main section article img{
-    flex: 33.33%;
-    padding: 5px;
-}
 
 #nyheter-img{
-   display: inline-block;
-   margin: 0 auto;
+   display: flex;
+   margin: 0;
 }
-
 
 
 .produktbilde{
-    display: inline-block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px 5px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.produktbilde-desktop{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px 5px;
+    max-width: 100%;
 }
 
 .les-mer-knapp{
@@ -102,7 +111,14 @@ body main section article img{
     justify-content: right;
 }
 
-#email-reg, #email-reg-box{
+
+#email-reg{
+    margin: auto;
+    width: 50%;
+
+}
+
+#email-reg-box{
     margin: 1rem;
 }
 #email-reg form{

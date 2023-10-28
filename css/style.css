@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html{
     font-size: calc(1em + 1vw); /* Denne formelen gjør teksten vår responsiv. em betyr ta utgangspunkt i pixelverdi på font-size. 1em er 16px på de fleste nettsteder. 1vw forteller at det skal være en del av visningsbredden, altså nettleservinduet. Dersom vinduet blir mindre kalkulerer den utifra det.*/
 }
@@ -11,10 +15,17 @@ body{
     display: grid;
     grid-template-areas: "header" "main" "footer";
     justify-content: center;
+    width: 100%;
+    grid-auto-columns: 100vw;
+    grid-auto-flow: column;
 }
 
                                                                                   /* HEADER */
                                                            /* NAV */
+body header{
+    width: 100%;
+    grid-area: header;
+}
 
 body header nav{
     display: grid;
@@ -70,17 +81,27 @@ body header h1, body header p{
 }
 
                                            /* MAIN */
+
+body main{
+    grid-area: main;
+}
+
 .underoverskrift{
     display: flex;
     justify-content: center;
+    width: 100%;
     background-color: rgb(196, 194, 194);
+}
+
+body main section{
+    display: inline-block;
     width: 100%;
 }
 
 body main section article{
     display: flex;
     justify-content: space-evenly;
-    max-width: 60%;
+    width: 100%;
 
 }
 
@@ -100,10 +121,7 @@ body main section article{
 }
 
 .produktbilde-desktop{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 5px 5px;
-    max-width: 100%;
+    display: none;
 }
 
 .les-mer-knapp{
@@ -113,8 +131,10 @@ body main section article{
 
 
 #email-reg{
+    display: flex;
+    justify-content: center;
     margin: auto;
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -127,6 +147,10 @@ body main section article{
 
 
                                     /* FOOTER */
+body footer{
+    grid-area: footer;
+}
+
 footer nav{
     display: flex;
     justify-content: space-evenly;
@@ -166,4 +190,62 @@ footer nav section ul{
 }
 #sosiale-medier ul li{
     display: flex;
+}
+
+
+                 /* Media Queries */
+@media only screen and (min-width: 600px) {
+
+    body{
+        max-width: 1260px;
+    }
+
+    #grid-container{
+        display: grid;
+        grid-template-areas: "header-left header-center header-right" "main-left main-center main-right" "footer-left footer-center footer-right";
+    }
+
+    body header{
+        grid-area: header-center;
+    }
+
+    body main{
+        grid-area: main-center;
+    }
+
+    body footer{
+        grid-area: footer-center;
+    }
+
+    .produktbilde-desktop{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 5px 5px;
+        max-width: 100%;
+    }
+
+    #edge-right-header{
+        display: grid;
+        grid-area: header-right;
+        width: 60px;
+        background-color: grey;
+    }
+    #edge-left-header{
+        display: grid;
+        grid-area: header-left;
+        width: 60px;
+        background-color: grey;
+    }
+    #edge-right-main{
+        display: grid;
+        grid-area: main-right;
+        width: 60px;
+        background-color: grey;
+    }
+    #edge-left-main{
+        display: grid;
+        grid-area: main-left;
+        width: 60px;
+        background-color: grey;
+    }
 }

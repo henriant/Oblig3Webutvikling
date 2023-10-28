@@ -63,12 +63,22 @@ body header nav{
     width: 15rem;
 }
 
+.broedsmuler{
+}
+
 .broedsmuler li{
+    display: inline-block;
     width: 100%;
-    float: left;
     list-style: none;
     font-size: medium;
     padding: 10px;
+}
+
+#mine-ordre{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+
 }
 
 
@@ -129,12 +139,34 @@ body main section article{
     justify-content: right;
 }
 
+.ordre-produkt{
+    display: inline-block;
+    width: 100%;
+    border: thick;
+    border-color: black;
+    padding: 1rem;
+}
+
+#spor-pakke-btn{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    padding: 1rem;
+}
+
+#ordredetaljer-btn{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    padding: 1rem;
+}
+
 
 #email-reg{
-    display: flex;
-    justify-content: center;
+    display: inline-block;
     margin: auto;
     width: 100%;
+    text-align: center;
 
 }
 
@@ -205,8 +237,17 @@ footer nav section ul{
         grid-template-areas: "header-left header-center header-right" "main-left main-center main-right" "footer-left footer-center footer-right";
     }
 
+    
+
     body header{
         grid-area: header-center;
+    }
+
+    #nav-ikoner-1, #nav-ikoner-2{
+        display: flex;
+        justify-content: space-between;
+        padding: 0, 2rem;
+        font-size: x-large;
     }
 
     body main{
@@ -224,28 +265,5 @@ footer nav section ul{
         max-width: 100%;
     }
 
-    #edge-right-header{
-        display: grid;
-        grid-area: header-right;
-        width: 60px;
-        background-color: grey;
-    }
-    #edge-left-header{
-        display: grid;
-        grid-area: header-left;
-        width: 60px;
-        background-color: grey;
-    }
-    #edge-right-main{
-        display: grid;
-        grid-area: main-right;
-        width: 60px;
-        background-color: grey;
-    }
-    #edge-left-main{
-        display: grid;
-        grid-area: main-left;
-        width: 60px;
-        background-color: grey;
-    }
+    
 }

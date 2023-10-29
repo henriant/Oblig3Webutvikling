@@ -31,25 +31,33 @@
                         <li><a href="produkt.html">Produkt</a></li>
                     </ul>
                 </nav>
-                <h2>Produktnavn</h2>
+                <h2 id="produktnavn">Produktnavn</h2>
             </header>
             <main>
                 <section>
-                    <img class="produktbilde" src="https://placehold.co/300x200" alt="Skoprodukt">
-                    <a>(Pris)</a>
-                    <a id="size-btn">Velg størrelse</a>
-                    <a id="handlekurv-btn">Legg i handlekurv</a>
-                    <h3>Beskrivelse</h3>
-                    <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    <img class="produktbilde" id="produktside-img" src="https://placehold.co/300x200" alt="Skoprodukt">
+                    <ul id="produktside-btns">
+                        <li id="pris">(Pris)</li>
+                        <li id="size-btn">Velg størrelse</li>
+                        <li id="legg-i-handlekurv-btn">Legg i handlekurv</li>
+                    </ul>
+                    <section id="produktbeskrivelse">
+                        <h3>Beskrivelse</h3>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    </section>
                 </section>
-                <section id="kundeomtale">
-                    <h3>Kundeomtale</h3>
-                    <p class="kundeomtale-navn">Navn</p>
-                    <p class="omtale-fra-kunde">Omtale</p>
-                    <p class="kundeomtale-navn">Navn</p>
-                    <p class="omtale-fra-kunde">Omtale</p>
-                    <a id="se-alle-omtaler-btn">Se alle</a>
-                </section>
+                <h3 id="kundeomtale-overskrift">Kundeomtale</h3>
+                <div id="kundeomtaler">
+                    <section id="kundeomtale-row-1">
+                        <p class="kundeomtale-navn">Navn</p>
+                        <p class="omtale-fra-kunde">Omtale</p>
+                    </section>
+                    <section id="kundeomtale-row-2">
+                        <p class="kundeomtale-navn">Navn</p>
+                        <p class="omtale-fra-kunde">Omtale</p>
+                    </section>
+                </div>
+                <a id="se-alle-omtaler-btn">Se alle</a>
 
                 <section id="email-reg">
                     <h3>Bli medlem hos Choose!</h3>

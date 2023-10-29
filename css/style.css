@@ -48,8 +48,9 @@ body header nav{
 }
 
 #kategorier ul li{
-    padding: 0.3rem;
-    margin: 0.3rem;
+    margin: 0.1rem;
+    border: black;
+    border-style: solid;
 }
 
 #nav-ikoner-1, #nav-ikoner-2{
@@ -64,20 +65,28 @@ body header nav{
 }
 
 
-.broedsmuler li{
-    display: inline-block;
-    text-align: left;
-    width: 100%;
-    list-style: none;
-    font-size: medium;
-    padding: 10px;
-}
 
 #mine-ordre{
     display: flex;
     justify-content: center;
     text-decoration: underline;
 
+}
+
+#handlekurv-btn{
+    display: flex;
+    justify-content: right;
+    margin: 1rem;
+}
+
+#size-btn{
+    display: flex;
+    justify-content: right;
+    margin: 1rem;
+}
+
+.broedsmuler{
+    display: none;
 }
 
 
@@ -128,6 +137,35 @@ body main section article{
    margin: 0;
 }
 
+#produktnavn{
+    padding: 1rem;
+}
+
+#produktside-img{
+    padding: 1rem;
+}
+
+#produktside-btns{
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+#pris{
+    padding: 0 1rem;
+    border: black;
+    border-style: solid;
+    width: 5rem;
+}
+
+#size-btn{
+    text-align: right;
+}
+
+#legg-i-handlekurv-btn{
+    text-align: right;
+}
 
 .produktbilde{
     display: flex;
@@ -149,9 +187,9 @@ body main section article{
 .ordre-produkt{
     display: inline-block;
     width: 100%;
-    border: thick;
-    border-color: black;
     padding: 1rem;
+    border: black;
+    border-style: solid;
 }
 
 #spor-pakke-btn{
@@ -168,13 +206,48 @@ body main section article{
     padding: 1rem;
 }
 
+#produktbeskrivelse{
+    padding: 1rem;
+}
+
+#kundeomtale-overskrift{
+    text-align: center;
+}
+
+#kundeomtaler{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.kundeomtale-navn{
+    font-size: xx-large;
+}
+
+#kundeomtale-row-1{
+    border: black;
+    border-style: solid;
+}
+
+#kundeomtale-row-2{
+    border: black;
+    border-style: solid;
+}
+
+#se-alle-omtaler-btn{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
 
 #email-reg{
     display: inline-block;
     margin: auto;
     width: 100%;
     text-align: center;
-
+    background-color: rgb(196, 194, 194);
 }
 
 #email-reg-box{
@@ -182,6 +255,18 @@ body main section article{
 }
 #email-reg form{
     margin: auto 0;
+}
+
+#kategori-bottom{
+    display: none;
+}
+
+#kategori-row-1, #kategori-row-2, #kategori-row-3{
+    list-style: none;
+}
+
+#hva-ser-du-etter{
+    display: none;
 }
 
 
@@ -240,7 +325,6 @@ footer nav section ul{
         max-width: 1260px;
     }
 
-
     #logo{
         padding: 1rem;
     }
@@ -253,35 +337,49 @@ footer nav section ul{
         background-color: grey;
     }
 
-    
-
     body header{
         display: grid;
         grid-area: header-center;
         background-color: white;
     }
 
-    .border-decor-l{
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        background-color: grey;
+    #sokefelt {
+        width: 20rem;
+        height: 1.2rem;
     }
 
-    .border-decor-r{
-        display: grid;
+    .broedsmuler{
+        display: flex;
+        justify-content: left;
+    }
+    .broedsmuler li{
+        list-style: none;
+        font-size: medium;
+        padding: 10px;
     }
 
-    #nav-ikoner-1, #nav-ikoner-2{
+    #nav-ikoner-2{
         display: flex;
         justify-content: space-between;
         padding: 0, 2rem;
-        font-size: x-large;
+        font-size: xx-large;
     }
 
+    #nav-ikoner-1{
+        display: flex;
+        justify-content: right;
+        padding: 0;
+        margin: 0;
+        font-size: xx-large;
+    }
 
+    #sok{
+        margin: 0.5rem;
+    }
+
+    #nav-ikoner-1 i{
+        padding: 1rem;
+    }
 
     #handlevogn, #logg-inn{
         display: inline-block;
@@ -293,16 +391,32 @@ footer nav section ul{
         background-color: white;
     }
 
-    body footer{
-        grid-area: footer-center;
+    .produktbilde{
     }
 
     .produktbilde-desktop{
         display: flex;
         justify-content: space-evenly;
-        margin: 5px 5px;
+        margin: 10px 10px;
         max-width: 100%;
     }
 
+    #kategori-bottom{
+        display: flex;
+        grid-area: main-center;
+        justify-content: center;
+    }
+
+    #hva-ser-du-etter{
+        display: grid;
+        grid-area: main-center;
+        text-align: center;
+    }
+
+    body footer{
+        grid-area: footer-center;
+    }
+
+ 
     
 }

@@ -63,11 +63,10 @@ body header nav{
     width: 15rem;
 }
 
-.broedsmuler{
-}
 
 .broedsmuler li{
     display: inline-block;
+    text-align: left;
     width: 100%;
     list-style: none;
     font-size: medium;
@@ -88,6 +87,14 @@ body header nav{
 body header h1, body header p{
     display: flex;
     justify-content: center;
+}
+
+.border-decor-r{
+    display: none;
+}
+
+.border-decor-l{
+    display: none;
 }
 
                                            /* MAIN */
@@ -229,18 +236,42 @@ footer nav section ul{
 @media only screen and (min-width: 600px) {
 
     body{
+        display: grid;
         max-width: 1260px;
+    }
+
+
+    #logo{
+        padding: 1rem;
     }
 
     #grid-container{
         display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-auto-rows: minmax(100px, auto);
         grid-template-areas: "header-left header-center header-right" "main-left main-center main-right" "footer-left footer-center footer-right";
+        background-color: grey;
     }
 
     
 
     body header{
+        display: grid;
         grid-area: header-center;
+        background-color: white;
+    }
+
+    .border-decor-l{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: grey;
+    }
+
+    .border-decor-r{
+        display: grid;
     }
 
     #nav-ikoner-1, #nav-ikoner-2{
@@ -250,8 +281,16 @@ footer nav section ul{
         font-size: x-large;
     }
 
+
+
+    #handlevogn, #logg-inn{
+        display: inline-block;
+        text-align: right;
+    }
+
     body main{
         grid-area: main-center;
+        background-color: white;
     }
 
     body footer{

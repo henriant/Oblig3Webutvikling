@@ -392,13 +392,15 @@ footer nav section ul{
     }
 
     .produktbilde{
+        max-width: 50%;
     }
 
     .produktbilde-desktop{
         display: flex;
         justify-content: space-evenly;
-        margin: 10px 10px;
-        max-width: 100%;
+        margin: 5px 5px;
+        max-width: 50%;
+        text-align: center;
     }
 
     #kategori-bottom{

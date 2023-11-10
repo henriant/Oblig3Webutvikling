@@ -47,29 +47,67 @@
                 <p>Jeg valgte disse nøkkelordene fordi de var blant de mest populære, samt fordi de er med på å representere det brede utvalget av 'vanlige' sko som Choose.no selger.</p>
                 <p>Til tross for at ikke alle nøkkelordene er grammatisk korrekte, er det slik mange skriver de, og derfor bør jeg ta med nøkkelordene som de er, grammatisk korrekte eller ikke. Dette er for å nå ut til flest mulig mennesker.</p>
             </section>
-            <section id="SEO-analyse">
+            <section id="SEO-analyse-mobil">
                 <h2>Analyse av SEO</h2>
                 <p>Ved hjelp av lighthouse har jeg gjort en analyse av SEO av de tre sidene mine. Her er resultatet:</p>
-                <section>
-                    <h3>SEO Mobil</h3>
                     <section id="SEO-analyse-index-mobil">
-                        <img id="SEO-dokumentasjonsbilde" src="img/analyse/index-seoscore-mobil.png">
+                        <h3>SEO Index Mobil</h3>
+                        <h4>SEO-score</h4>
+                        <img id="SEO-analyse-index-mobil-img" src="img/analyse/index-seoscore-mobil.png" alt="Dokumentasjonsbilde">
                         <p>Etter en analyse gjennom lighthouse, fikk index-filen min en score på 80.</p>
-                        <img id="SEO-best-practices-index-mobil" src="img/analyse/index-mobil-bestpractices.png">
+                        <h4>Content best practices</h4>
+                        <img id="SEO-best-practices-index-mobil-img" src="img/analyse/index-mobil-bestpractices.png" alt="Dokumentasjonsbilde">
                         <p>Under 'Content Best Practices' kom lighthouse frem til at jeg bør ha en beskrivelse i meta som beskriver dokumentet.</p>
+                        <h4>Crawling and indexing</h4>
+                        <img id="SEO-crawling-index-mobil-img" src="img/analyse/index-seo-crawling-mobil.png" alt="Dokumentasjonsbilde">
+                        <p>Under 'Crawling and indexing' refererer Lighthouse til linker som ikke kan crawles. Under viser den bilder av listepunktene mine i footer nav, og kategoriknappene i navigasjonsbaren øverst på siden. Her regner jeg med at Lighthouse vil at jeg skal legge til lenker under disse listepunktene.</p>
+                        <h4>Mobile friendly</h4>
+                        <img id="SEO-mobile-friendly-index-mobil-img" src="img/analyse/index-seo-mobile-friendly-mobil.png" alt="Dokumentasjonsbilde">
+                        <p>Under 'Mobile friendly' forteller Lighthouse meg at enkelte knapper på siden er 67% av størrelsen de egentlig burde være. Knappene mine nå kan være vanskelige å treffe på mobil. Dette kan jeg nok løse ved å øke paddingen på knappene.</p>
                     </section>
                     <section id="SEO-analyse-ordreoversikt-mobil">
-
+                        <h3>SEO Ordreoversikt Mobil</h3>
+                        <h4>SEO-score</h4>
+                        <img id="SEO-analyse-ordreoversikt-mobil-img" src="img/analyse/ordreoversikt-seoscore-mobil.png" alt="Dokumentasjonsbilde">
+                        <p>Etter en analyse gjennom lighthouse, fikk ordreoversikt-filen min en score på 78.</p>
+                        <h4>Content best practices, crawling and indexing, mobile friendly</h4>
+                        <img id="SEO-diverse-ordreoversikt-mobil-img" src="img/analyse/ordreoversikt-seo-diverse-mobil.png" alt="Dokumentasjonsbilde">
+                        <p>Under 'content best practices' og 'crawling and indexing' er resultatene de samme som i Index-filen. Men mobilvennligheten ser ut til å være verre her, med knapper på kun 40% av anbefalt størrelse.</p>
                     </section>
                     <section id="SEO-analyse-produkt-mobil">
-
+                        <h3>SEO Produktside Mobil</h3>
+                        <h4>SEO-score, content best practices, crawling and indexing</h4>
+                        <img id="SEO-diverse-produkt-mobil-img" src="img/analyse/produktside-seo-diverse-mobil.png" alt="Dokumentasjonsbilde">
+                        <p>Produktsiden får samme score som ordreoversikten. 'Content best practices' og 'crawling and indexing' får også samme resultat, og det er navigasjonen i footer som går igjen.</p>
+                        <h4>Mobile friendly</h4>
+                        <img id="SEO-mobile-friendly-produkt-mobil-img" src="img/analyse/produktside-seo-mobilefriendly-mobil.png" alt="Dokumentasjonsbilde">
+                        <p>Under 'mobile friendly' får jeg vite at knappene mine kun er 36% av anbefalt størrelse. Dette gjør nok siden veldig vanskelig å navigere på mobil, så det er noe jeg må endre på.</p>
                     </section>
+            </section>
+
+            <section id="SEO-analyse-desktop">
+                <section id="SEO-analyse-index-desktop">
+                    <h3>SEO Index Desktop</h3>
+                    <h4>SEO-score, content best practices, crawling and indexing</h4>
+                    <img id="SEO-diverse-index-desktop-img" src="img/analyse/index-seo-diverse-desktop.png" alt="Dokumentasjonsbilde">
+                    <p>SEO får samme score på desktop som på mobil. Jeg får samme advarsler her som på mobil, hvor dokumentet ikke har en metabeskrivelse, og at linkene i footer og kategoriknappene ikke er 'crawlable'.</p>
                 </section>
+                <section id="SEO-analyse-ordreoversikt-desktop">
+                    <h3>SEO Ordreoversikt Desktop</h3>
+                    <h4>SEO-score, content best practices, crawling and indexing</h4>
+                    <img id="SEO-diverse-ordreoversikt-desktop-mobil" src="img/analyse/ordreoversikt-seo-diverse-desktop.png" alt="Dokumentasjonsbilde">
+                    <p>Analyseresultatet av ordreoversikten på desktop ser helt likt ut som analyseresultatet av forsiden (index) på desktop.</p>
+                </section>
+                <section id="SEO-analyse-produkt-desktop">
+                    <h3>SEO Produktside Desktop</h3>
+                    <h4>SEO-score, content best practices, crawling and indexing</h4>
+                    <img id="SEO-diverse-produkt-desktop-img" src="img/analyse/produktside-seo-diverse-desktop.png" alt="Dokumentasjonsbilde">
+                    <p>Analyseresultatet av produktsiden på desktop ser igjen helt lik ut som analyseresultatet av ordreoversikten på desktop.</p>
+                </section>
+            </section>
                 <section>
                     <h3>SEO Desktop</h3>
                 </section>
-
-            </section>
             <section id="UU-analyse">
 
             </section>
